@@ -1,0 +1,62 @@
+[
+  {
+    "path": "assets/paper/igpc.pdf",
+    "sha256": "1a526ff717978d5647f888162c805d75ad3331f21c416cbce1828d3cbbba7e3b",
+    "parts": [
+      ".media/igpc.pdf/0000.part",
+      ".media/igpc.pdf/0001.part",
+      ".media/igpc.pdf/0002.part",
+      ".media/igpc.pdf/0003.part",
+      ".media/igpc.pdf/0004.part",
+      ".media/igpc.pdf/0005.part",
+      ".media/igpc.pdf/0006.part",
+      ".media/igpc.pdf/0007.part",
+      ".media/igpc.pdf/0008.part",
+      ".media/igpc.pdf/0009.part",
+      ".media/igpc.pdf/0010.part"
+    ]
+  },
+  {
+    "path": "assets/videos/highlight.mp4",
+    "sha256": "f668a48ad50ae18f152f6a684c7cc291820492ecfa9e5cad63249de100e5b5d2",
+    "parts": [
+      ".media/highlight.mp4/0000.part",
+      ".media/highlight.mp4/0001.part",
+      ".media/highlight.mp4/0002.part",
+      ".media/highlight.mp4/0003.part",
+      ".media/highlight.mp4/0004.part",
+      ".media/highlight.mp4/0005.part",
+      ".media/highlight.mp4/0006.part",
+      ".media/highlight.mp4/0007.part",
+      ".media/highlight.mp4/0008.part",
+      ".media/highlight.mp4/0009.part",
+      ".media/highlight.mp4/0010.part",
+      ".media/highlight.mp4/0011.part",
+      ".media/highlight.mp4/0012.part",
+      ".media/highlight.mp4/0013.part",
+      ".media/highlight.mp4/0014.part",
+      ".media/highlight.mp4/0015.part",
+      ".media/highlight.mp4/0016.part",
+      ".media/highlight.mp4/0017.part",
+      ".media/highlight.mp4/0018.part",
+      ".media/highlight.mp4/0019.part"
+    ]
+  },
+  {
+    "path": "assets/videos/pushing.mp4",
+    "sha256": "71abad91465aea87096c9bb577091d34faa63f07497f6ba864228259774b2bde",
+    "parts": [
+      ".media/pushing.mp4/0000.part",
+      ".media/pushing.mp4/0001.part",
+      ".media/pushing.mp4/0002.part"
+    ]
+  },
+  {
+    "path": "assets/videos/recovery.mp4",
+    "sha256": "d480a36568ac5126fd1c77b9b3815a8d5968cecb7d49eb0e437247bd655c2d37",
+    "parts": [
+      ".media/recovery.mp4/0000.part",
+      ".media/recovery.mp4/0001.part"
+    ]
+  }
+]

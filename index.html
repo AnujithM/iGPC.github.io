@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fafbff">
+  <meta name="description" content="iGPC adapts generative human-motion priors into perceptive, object-aware whole-body control for reaching, support-assisted stabilization, and box pushing on Unitree G1.">
+  <meta property="og:title" content="iGPC · Generative Motion Priors for Object-Aware Humanoid Interaction">
+  <meta property="og:description" content="From human motion to object-aware interaction. Explore the method and real-robot demonstrations.">
+  <meta property="og:type" content="website">
+  <title>iGPC · Object-Aware Humanoid Interaction</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#overview">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a href="#top" class="wordmark" aria-label="iGPC home"><span>i</span>GPC<span class="wordmark-dot">.</span></a>
+      <div class="nav-links"><a href="#overview">Overview</a><a href="#results">In the real world</a><a href="#method">Method</a><a href="#evaluation">Results</a></div>
+      <a class="nav-paper" href="assets/paper/igpc.pdf" target="_blank" rel="noopener">Read the paper <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="title">
+      <p class="eyebrow">HUMAN MOTION PRIORS · OBJECT-AWARE CONTROL</p>
+      <h1 id="title"><span class="title-mark">iGPC</span><span class="title-text">Generative Motion Priors for<br class="desktop-break"> Object-Aware Humanoid Interaction</span></h1>
+      <p class="hero-description">Human-like motion. Purposeful interaction.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="assets/paper/igpc.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M8 13h8M8 17h6"/></svg>Paper <span aria-hidden="true">↗</span></a>
+        <a class="button secondary" href="#highlight"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7z"/></svg>Watch the highlight</a>
+      </div>
+      <div class="highlight-shell" id="highlight">
+        <video id="highlight-video" class="highlight-video" controls muted autoplay loop playsinline preload="metadata" poster="assets/images/highlight-poster.jpg" aria-label="iGPC research highlight: motivation, method, simulation and real-robot experiments">
+          <source src="assets/videos/highlight.mp4" type="video/mp4">
+          Your browser does not support video. <a href="assets/videos/highlight.mp4">Download the highlight video.</a>
+        </video>
+        <div class="highlight-caption"><span><span class="caption-label">PROJECT FILM</span> From motion priors to physical interaction</span><button class="sound-button" type="button" id="sound-toggle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4zM16 9l5 6m0-6-5 6"/></svg><span>Turn sound on</span></button></div>
+      </div>
+      <div class="video-chapters" aria-label="Video chapters">
+        <button type="button" data-seek="0"><span>01</span> Introduction</button>
+        <button type="button" data-seek="29.04"><span>02</span> Method</button>
+        <button type="button" data-seek="107"><span>03</span> Simulation</button>
+        <button type="button" data-seek="146.07"><span>04</span> Real robot</button>
+      </div>
+    </section>
+
+    <section class="overview section wrap" id="overview" aria-labelledby="overview-title">
+      <div class="section-intro"><p class="eyebrow">THE IDEA</p><h2 id="overview-title">Beyond motion.<br><span class="muted-heading">Into interaction.</span></h2></div>
+      <div class="overview-copy"><p class="lead">A humanoid should do more than reproduce a motion. It should reach a target, use a support, and move an object in the world around it.</p><p>iGPC turns a generative human-motion prior into object-aware, whole-body control. Task-specific adapters build on a retained GPC motor prior, while perceptive students use depth, LiDAR, and proprioceptive history to act on the Unitree G1.</p><p>The result is purposeful interaction <strong>without a prescribed motion reference at execution.</strong></p><a class="text-link" href="#method">Explore the method <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section class="world-section" id="results" aria-labelledby="world-title">
+      <div class="wrap section">
+        <div class="section-heading"><div><p class="eyebrow">ON THE UNITREE G1</p><h2 id="world-title">In the real world.</h2></div><p>Reaching, pushing, and recovering balance.<br>Perception connects the motion prior to the scene.</p></div>
+        <div class="demo-grid">
+          <article class="demo-card"><div class="demo-media"><video controls muted loop playsinline preload="none" poster="assets/images/reaching-poster.jpg" aria-label="Real-robot rail reaching demonstration"><source src="assets/videos/reaching.mp4" type="video/mp4"></video><span class="media-tag">REAL ROBOT</span></div><div class="demo-copy"><span class="task-number">01 / REACH</span><h3>Make contact with intent.</h3><p>Coordinate whole-body motion to reach the upper rail and establish contact.</p></div></article>
+          <article class="demo-card"><div class="demo-media"><video controls muted loop playsinline preload="none" poster="assets/images/pushing-poster.jpg" aria-label="Real-robot box pushing demonstration"><source src="assets/videos/pushing.mp4" type="video/mp4"></video><span class="media-tag">REAL ROBOT</span></div><div class="demo-copy"><span class="task-number">02 / PUSH</span><h3>Put motion to work.</h3><p>Approach the box and turn sustained contact into forward object motion.</p></div></article>
+          <article class="demo-card"><div class="demo-media"><video controls muted loop playsinline preload="none" poster="assets/images/recovery-poster.jpg" aria-label="Real-robot rail-assisted push recovery demonstration"><source src="assets/videos/recovery.mp4" type="video/mp4"></video><span class="media-tag">REAL ROBOT</span></div><div class="demo-copy"><span class="task-number">03 / STABILIZE</span><h3>Find support. Stay upright.</h3><p>React to a disturbance and use the nearby rail to help recover balance.</p></div></article>
+        </div>
+        <p class="section-note">Clips from the project video. Real-world demonstrations are qualitative; quantitative evaluation below is in simulation.</p>
+      </div>
+    </section>
+
+    <section class="section wrap method-section" id="method" aria-labelledby="method-title">
+      <div class="section-heading"><div><p class="eyebrow">HOW IT WORKS</p><h2 id="method-title">A reusable prior.<br>New ways to interact.</h2></div><p>Preserve the motor knowledge.<br>Learn the task. Ground it in perception.</p></div>
+      <figure class="method-figure"><button class="figure-button" type="button" data-figure="assets/images/method-overview.webp" data-caption="iGPC method overview from the paper" aria-label="Expand the iGPC method overview"><img src="assets/images/method-overview.webp" width="2048" height="1177" alt="iGPC training pipeline: a pretrained GPC motion prior, object-aware task adaptation, and perceptive student distillation" loading="lazy"><span class="expand-hint">Expand figure ↗</span></button><figcaption>From the pretrained GPC motion prior to object-aware experts and deployable perceptive students.</figcaption></figure>
+      <div class="method-steps">
+        <article><span class="step-index">01</span><h3>Reuse motion knowledge</h3><p>Start from the pretrained GPC generative motor prior and decoder, retaining the structure of natural whole-body motion.</p></article>
+        <article><span class="step-index">02</span><h3>Learn object-aware tasks</h3><p>Condition task-specific adapters on interaction goals and object or support information. Refine experts for reaching, stabilization, and pushing.</p></article>
+        <article><span class="step-index">03</span><h3>Transfer to perception</h3><p>Distill privileged experts using depth, LiDAR, and proprioceptive history, then calibrate prior inputs and refine the task adapter.</p></article>
+      </div>
+    </section>
+
+    <section class="evaluation-section" id="evaluation" aria-labelledby="evaluation-title">
+      <div class="section wrap">
+        <div class="section-heading"><div><p class="eyebrow">EVALUATION IN SIMULATION</p><h2 id="evaluation-title">Interaction that holds up.</h2></div><p>Perceptive student performance across<br>three complementary tasks.</p></div>
+        <div class="metrics-grid">
+          <article class="metric"><p class="metric-name">Commanded reaching</p><p class="metric-value">95.95<span>%</span></p><h3>Rail-contact success</h3><p>Perceptive student, compared with 99.32% for the privileged expert.</p><span class="metric-detail">2,048 matched trials per method</span></article>
+          <article class="metric"><p class="metric-name">Support-assisted stabilization</p><p class="metric-value">4.88<span>%</span></p><h3>Fall rate after two pushes</h3><p>Compared with 18.36% for leg-only GPC at a push Δv of 2.0–2.5 m/s.</p><span class="metric-detail">512 matched trials per method</span></article>
+          <article class="metric"><p class="metric-name">Box pushing</p><p class="metric-value">67.59<span>m</span></p><h3>Forward displacement</h3><p>Mean student performance over episodes of up to 60 seconds.</p><span class="metric-detail">±1.05 m across four seed means</span></article>
+        </div>
+        <details class="benchmark-details"><summary>Evaluation details and comparisons <span aria-hidden="true">+</span></summary><div class="benchmark-content"><div class="table-scroll"><table><caption>Simulation results reported in the paper</caption><thead><tr><th scope="col">Task / metric</th><th scope="col">iGPC student</th><th scope="col">Comparison</th></tr></thead><tbody><tr><th scope="row">Reaching · rail-contact success ↑</th><td>95.95%</td><td>Expert: 99.32%</td></tr><tr><th scope="row">Reaching · body collision ↓</th><td>5.22%</td><td>MLP: 50.73%</td></tr><tr><th scope="row">Two-push stabilization · fall rate ↓</th><td>4.88%</td><td>Leg-only GPC: 18.36%</td></tr><tr><th scope="row">Box pushing · forward displacement ↑</th><td>67.59 ± 1.05 m</td><td>VisualMimic: 45.17 ± 0.07 m</td></tr></tbody></table></div><p>Stabilization uses two pushes with Δv 2.0–2.5 m/s. Box pushing uses a 3.8 kg box, effective friction 0.6, and four seeds with 128 trials per seed. The box comparison matches shared reset and box conditions, while retaining each method’s native simulator and control interface: Isaac Lab for iGPC and MuJoCo for VisualMimic. See the paper for the complete protocol.</p></div></details>
+      </div>
+    </section>
+
+    <section class="section wrap paper-section" id="paper" aria-labelledby="paper-title">
+      <div><p class="eyebrow">THE PAPER</p><h2 id="paper-title">Explore iGPC.</h2><p class="paper-title">Generative Motion Priors for<br>Object-Aware Humanoid Interaction</p><p class="paper-status">Anonymous ICRA 2027 submission</p><a class="button primary" href="assets/paper/igpc.pdf" target="_blank" rel="noopener">Read the full paper <span aria-hidden="true">↗</span></a></div>
+      <figure class="paper-teaser"><img src="assets/images/teaser.webp" width="2048" height="938" alt="Human motion priors adapted for rail reaching, support-assisted stabilization, and box pushing" loading="lazy"></figure>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><a class="wordmark" href="#top"><span>i</span>GPC<span class="wordmark-dot">.</span></a><p>Generative motion priors. Object-aware interaction.</p><a href="#top">Back to top ↑</a></footer>
+  <dialog id="figure-dialog" aria-label="Expanded method figure"><button class="dialog-close" type="button" aria-label="Close expanded figure">×</button><img alt=""><p></p></dialog>
+</body>
+</html>
