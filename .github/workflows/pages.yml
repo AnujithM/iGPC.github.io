@@ -1,5 +1,7 @@
 name: Build and publish project website
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read

@@ -37,3 +37,9 @@ document.addEventListener('visibilitychange', () => {
     }
   });
 });
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY < document.querySelector('#overview').offsetTop - window.innerHeight / 2) {
+    navLinks.forEach(link => link.removeAttribute('aria-current'));
+  }
+}, { passive: true });
