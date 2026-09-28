@@ -58,5 +58,35 @@
       ".media/recovery.mp4/0000.part",
       ".media/recovery.mp4/0001.part"
     ]
+  },
+  {
+    "path": "assets/videos/hero-montage.mp4",
+    "sha256": "767ebc0fa3f1869bf8c9112a2e6e1354add5f984ef0ba8acf84a3b0da245aa8a",
+    "parts": [
+      ".media/hero-montage.mp4/0000.part",
+      ".media/hero-montage.mp4/0001.part",
+      ".media/hero-montage.mp4/0002.part",
+      ".media/hero-montage.mp4/0003.part",
+      ".media/hero-montage.mp4/0004.part",
+      ".media/hero-montage.mp4/0005.part"
+    ]
+  },
+  {
+    "path": "assets/videos/real-box.mp4",
+    "sha256": "7ea5230ec5c85d0528f229f602a02394a6967c88b0db3b80effa89060aa951d6",
+    "parts": [
+      ".media/real-box.mp4/0000.part",
+      ".media/real-box.mp4/0001.part",
+      ".media/real-box.mp4/0002.part"
+    ]
+  },
+  {
+    "path": "assets/videos/real-seated.mp4",
+    "sha256": "b220f4369424b8109e4276a0025ab09fe82349d7686bf502b49828003140b381",
+    "parts": [
+      ".media/real-seated.mp4/0000.part",
+      ".media/real-seated.mp4/0001.part",
+      ".media/real-seated.mp4/0002.part"
+    ]
   }
 ]
